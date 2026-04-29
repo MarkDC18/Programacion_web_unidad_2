@@ -1,13 +1,24 @@
+body{
+font-family: Arial, sans-serif;
+}
+
 .hero{
-background:blue;
-padding:100px 0;
+height: 90vh;
+background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1400&q=80');
+background-size: cover;
+background-position: center;
 }
 
 .card{
-border-radius:15px;
-transition:0.3s;
+transition: .3s;
+border-radius: 15px;
 }
 
 .card:hover{
-transform:scale(1.05);
+transform: translateY(-8px);
+}
+
+footer{
+margin-top:50px;
 }

@@ -1,10 +1,20 @@
-document.getElementById("formulario").addEventListener("submit", function(e){
+document.addEventListener("DOMContentLoaded",()=>{
+
+let form=document.getElementById("formulario");
+
+if(form){
+
+form.addEventListener("submit",(e)=>{
 
 e.preventDefault();
 
-let nombre = document.getElementById("nombre").value;
+document.getElementById("mensaje").innerHTML=
+"Reserva enviada correctamente";
 
-document.getElementById("mensaje").innerHTML =
-"Reserva enviada para " + nombre;
+form.reset();
+
+});
+
+}
 
 });
